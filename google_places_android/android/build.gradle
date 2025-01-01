@@ -25,7 +25,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 31
+    namespace 'com.google_places_android'
+    compileSdk 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -64,5 +65,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.libraries.places:places:3.0.0'
+    implementation 'com.google.android.libraries.places:places:4.1.0'
 }
